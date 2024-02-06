@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-06T16:35:23.672696" rpa="false" schemaversion="5">
+<suite id="s1" name="IQS LOGICA" source="D:\Dev\IQS_LOGICA">
+<suite id="s1-s1" name="Exercicio 15" source="D:\Dev\IQS_LOGICA\exercicio_15.robot">
+<test id="s1-s1-t1" name="Exercicio 15" line="13">
+<if>
+<branch type="IF" condition="${IDADE} &gt;= 65 or '${CONDICAO_ESPECIAL}' == 'deficiente' or '${CONDICAO_ESPECIAL}' == 'gestante'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${NOME}, ${IDADE} anos, ${CONDICAO_ESPECIAL}, ${FILA_PREFERENCIAL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-06T16:35:23.729904" elapsed="0.001004"/>
+</kw>
+<status status="PASS" start="2024-02-06T16:35:23.728906" elapsed="0.002999"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n${NOME}, ${IDADE} anos, ${CONDICAO_ESPECIAL}, ${FILA_COMUM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-02-06T16:35:23.731905" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-02-06T16:35:23.731905" elapsed="0.001004"/>
+</branch>
+<status status="PASS" start="2024-02-06T16:35:23.727907" elapsed="0.005002"/>
+</if>
+<status status="PASS" start="2024-02-06T16:35:23.725906" elapsed="0.007519"/>
+</test>
+<status status="PASS" start="2024-02-06T16:35:23.720694" elapsed="0.014749"/>
+</suite>
+<status status="PASS" start="2024-02-06T16:35:23.681655" elapsed="0.057800"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="IQS LOGICA">IQS LOGICA</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Exercicio 15">IQS LOGICA.Exercicio 15</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
